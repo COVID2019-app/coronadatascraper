@@ -1,15 +1,15 @@
 {
   "sources": {
-    "numSources": 130,
+    "numSources": 132,
     "errors": []
   },
   "scrape": {
-    "numCountries": 174,
-    "numStates": 263,
-    "numCounties": 3251,
-    "numCities": 26,
-    "numDuplicates": 1954,
-    "numErrors": 22,
+    "numCountries": 175,
+    "numStates": 281,
+    "numCounties": 3298,
+    "numCities": 65,
+    "numDuplicates": 1980,
+    "numErrors": 19,
     "crosscheckReports": {
       "yolo county, ca, usa": [
         {
@@ -205,8 +205,9 @@
           "priority": 0,
           "url": "https://www.vcemergency.com",
           "cases": 109,
+          "deaths": 4,
           "ssl": true,
-          "rating": 0.13725490196078433
+          "rating": 0.21568627450980393
         },
         {
           "state": "CA",
@@ -370,14 +371,16 @@
             }
           ],
           "url": "https://publichealthsbc.org",
-          "type": "paragraph",
+          "type": "table",
+          "scraper": {},
           "timeseries": false,
           "headless": false,
           "certValidation": true,
           "priority": 0,
-          "cases": 0,
+          "cases": 68,
+          "tested": 706,
           "ssl": true,
-          "rating": 0.13725490196078433
+          "rating": 0.35294117647058826
         },
         {
           "country": "USA",
@@ -1044,17 +1047,18 @@
             }
           ],
           "url": "https://www.co.merced.ca.us/3350/Coronavirus-Disease-2019",
+          "scraper": {},
           "timeseries": false,
           "headless": false,
           "certValidation": true,
           "priority": 0,
-          "cases": 0,
+          "type": "table",
+          "tested": 61,
+          "cases": 9,
           "deaths": 0,
-          "recovered": 0,
-          "active": 0,
-          "type": "list",
+          "recoveries": 0,
           "ssl": true,
-          "rating": 0.4117647058823529
+          "rating": 0.43137254901960786
         },
         {
           "country": "USA",
@@ -4105,7 +4109,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -4113,8 +4117,8 @@
           "headless": false,
           "certValidation": true,
           "priority": 0,
-          "cases": 456,
-          "deaths": 9,
+          "cases": 774,
+          "deaths": 16,
           "ssl": true,
           "rating": 0.4117647058823529
         },
@@ -4138,6 +4142,77 @@
           "state": "SC",
           "cases": 661,
           "deaths": 15,
+          "ssl": true,
+          "rating": 0.5490196078431373
+        }
+      ],
+      "ri, usa": [
+        {
+          "country": "USA",
+          "url": "https://covidtracking.com/api/states",
+          "type": "json",
+          "curators": [
+            {
+              "name": "The COVID Tracking Project",
+              "url": "https://covidtracking.com/",
+              "twitter": "@COVID19Tracking",
+              "github": "COVID19Tracking"
+            }
+          ],
+          "aggregate": "state",
+          "priority": -0.5,
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "state": "RI",
+          "deaths": 3,
+          "tested": 3134,
+          "cases": 294,
+          "ssl": true,
+          "rating": 0.49019607843137253
+        },
+        {
+          "state": "RI",
+          "country": "USA",
+          "priority": 1,
+          "type": "csv",
+          "sources": [
+            {
+              "url": "https://health.ri.gov/data/covid-19/",
+              "name": "State of Rhode Island Department of Health"
+            }
+          ],
+          "url": "https://health.ri.gov/data/covid-19/",
+          "scraper": {},
+          "timeseries": false,
+          "headless": true,
+          "certValidation": true,
+          "cases": 294,
+          "deaths": 0,
+          "aggregate": "county",
+          "ssl": true,
+          "rating": 0.37254901960784315
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "RI",
+          "cases": 239,
+          "deaths": 2,
           "ssl": true,
           "rating": 0.5490196078431373
         }
@@ -4637,6 +4712,76 @@
           "state": "NE",
           "cases": 123,
           "deaths": 2,
+          "ssl": true,
+          "rating": 0.5490196078431373
+        }
+      ],
+      "nd, usa": [
+        {
+          "country": "USA",
+          "url": "https://covidtracking.com/api/states",
+          "type": "json",
+          "curators": [
+            {
+              "name": "The COVID Tracking Project",
+              "url": "https://covidtracking.com/",
+              "twitter": "@COVID19Tracking",
+              "github": "COVID19Tracking"
+            }
+          ],
+          "aggregate": "state",
+          "priority": -0.5,
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "deaths": 1,
+          "tested": 3724,
+          "cases": 98,
+          "ssl": true,
+          "rating": 0.49019607843137253
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "tested": 3459,
+          "cases": 98,
+          "ssl": true,
+          "rating": 0.39215686274509803
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 94,
+          "deaths": 1,
           "ssl": true,
           "rating": 0.5490196078431373
         }
@@ -5170,8 +5315,8 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
-          "cases": 349,
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
+          "cases": 1413,
           "ssl": true,
           "rating": 0.3333333333333333
         },
@@ -5978,15 +6123,17 @@
               "description": "Delaware Health and Social Services Division of Public Health"
             }
           ],
+          "scraper": {},
           "timeseries": false,
           "headless": false,
           "certValidation": true,
           "priority": 0,
-          "url": "http://opendata.arcgis.com/datasets/c8d4efa2a6bd48a1a7ae074a8166c6fa_0.csv",
-          "type": "csv",
-          "cases": 119,
-          "ssl": false,
-          "rating": 0.3137254901960784
+          "url": "https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_Time_VIEW/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&resultOffset=0&resultRecordCount=50&cacheHint=true",
+          "type": "json",
+          "cases": 264,
+          "deaths": 6,
+          "ssl": true,
+          "rating": 0.4117647058823529
         },
         {
           "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
@@ -6630,55 +6777,6 @@
           "rating": 0.47058823529411764
         }
       ],
-      "ri, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "RI",
-          "cases": 239,
-          "deaths": 2,
-          "ssl": true,
-          "rating": 0.5490196078431373
-        },
-        {
-          "country": "USA",
-          "url": "https://covidtracking.com/api/states",
-          "type": "json",
-          "curators": [
-            {
-              "name": "The COVID Tracking Project",
-              "url": "https://covidtracking.com/",
-              "twitter": "@COVID19Tracking",
-              "github": "COVID19Tracking"
-            }
-          ],
-          "aggregate": "state",
-          "priority": -0.5,
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "state": "RI",
-          "deaths": 3,
-          "tested": 3134,
-          "cases": 294,
-          "ssl": true,
-          "rating": 0.49019607843137253
-        }
-      ],
       "pr, usa": [
         {
           "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
@@ -6870,55 +6968,6 @@
           "cases": 2,
           "ssl": true,
           "rating": 0.4117647058823529
-        }
-      ],
-      "nd, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "ND",
-          "cases": 94,
-          "deaths": 1,
-          "ssl": true,
-          "rating": 0.5490196078431373
-        },
-        {
-          "country": "USA",
-          "url": "https://covidtracking.com/api/states",
-          "type": "json",
-          "curators": [
-            {
-              "name": "The COVID Tracking Project",
-              "url": "https://covidtracking.com/",
-              "twitter": "@COVID19Tracking",
-              "github": "COVID19Tracking"
-            }
-          ],
-          "aggregate": "state",
-          "priority": -0.5,
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "state": "ND",
-          "deaths": 1,
-          "tested": 3724,
-          "cases": 98,
-          "ssl": true,
-          "rating": 0.49019607843137253
         }
       ],
       "nv, usa": [
@@ -14302,7 +14351,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14311,57 +14360,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "York County",
-          "cases": 19,
+          "cases": 36,
           "deaths": 0,
-          "recovered": 0,
-          "active": 19,
           "ssl": true,
-          "rating": 0.5686274509803921
-        }
-      ],
-      "williamsburg county, sc, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "SC",
-          "cases": 2,
-          "deaths": 0,
-          "county": "Williamsburg County",
-          "ssl": true,
-          "rating": 0.6274509803921569
-        },
-        {
-          "state": "SC",
-          "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
-          "type": "json",
-          "aggregate": "county",
-          "scraper": {},
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "priority": 0,
-          "county": "Williamsburg County",
-          "cases": 1,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 1,
-          "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "sumter county, sc, usa": [
@@ -14392,7 +14394,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14401,12 +14403,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Sumter County",
-          "cases": 10,
+          "cases": 30,
           "deaths": 2,
-          "recovered": 0,
-          "active": 8,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "spartanburg county, sc, usa": [
@@ -14437,7 +14437,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14446,12 +14446,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Spartanburg County",
-          "cases": 9,
+          "cases": 25,
           "deaths": 0,
-          "recovered": 0,
-          "active": 9,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "richland county, sc, usa": [
@@ -14482,7 +14480,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14491,12 +14489,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Richland County",
-          "cases": 60,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 60,
+          "cases": 95,
+          "deaths": 2,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "pickens county, sc, usa": [
@@ -14527,7 +14523,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14536,12 +14532,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Pickens County",
-          "cases": 6,
+          "cases": 11,
           "deaths": 0,
-          "recovered": 0,
-          "active": 6,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "orangeburg county, sc, usa": [
@@ -14572,7 +14566,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14581,12 +14575,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Orangeburg County",
-          "cases": 11,
+          "cases": 16,
           "deaths": 0,
-          "recovered": 0,
-          "active": 11,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "oconee county, sc, usa": [
@@ -14617,7 +14609,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14626,15 +14618,13 @@
           "certValidation": true,
           "priority": 0,
           "county": "Oconee County",
-          "cases": 2,
+          "cases": 4,
           "deaths": 0,
-          "recovered": 0,
-          "active": 2,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
-      "newberry county, sc, usa": [
+      "marlboro county, sc, usa": [
         {
           "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
           "type": "csv",
@@ -14653,16 +14643,16 @@
           "headless": false,
           "certValidation": true,
           "state": "SC",
-          "cases": 2,
+          "cases": 1,
           "deaths": 0,
-          "county": "Newberry County",
+          "county": "Marlboro County",
           "ssl": true,
           "rating": 0.6274509803921569
         },
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14670,13 +14660,11 @@
           "headless": false,
           "certValidation": true,
           "priority": 0,
-          "county": "Newberry County",
-          "cases": 1,
+          "county": "Marlboro County",
+          "cases": 2,
           "deaths": 0,
-          "recovered": 0,
-          "active": 1,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "lexington county, sc, usa": [
@@ -14707,7 +14695,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14716,57 +14704,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Lexington County",
-          "cases": 20,
+          "cases": 35,
           "deaths": 1,
-          "recovered": 0,
-          "active": 19,
           "ssl": true,
-          "rating": 0.5686274509803921
-        }
-      ],
-      "lee county, sc, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "SC",
-          "cases": 5,
-          "deaths": 0,
-          "county": "Lee County",
-          "ssl": true,
-          "rating": 0.6274509803921569
-        },
-        {
-          "state": "SC",
-          "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
-          "type": "json",
-          "aggregate": "county",
-          "scraper": {},
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "priority": 0,
-          "county": "Lee County",
-          "cases": 2,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 2,
-          "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "laurens county, sc, usa": [
@@ -14797,7 +14738,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14806,12 +14747,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Laurens County",
-          "cases": 0,
+          "cases": 3,
           "deaths": 0,
-          "recovered": 0,
-          "active": 0,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "lancaster county, sc, usa": [
@@ -14842,7 +14781,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14851,12 +14790,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Lancaster County",
-          "cases": 7,
+          "cases": 13,
           "deaths": 0,
-          "recovered": 0,
-          "active": 7,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "kershaw county, sc, usa": [
@@ -14887,7 +14824,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14896,12 +14833,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Kershaw County",
-          "cases": 64,
-          "deaths": 1,
-          "recovered": 0,
-          "active": 63,
+          "cases": 83,
+          "deaths": 2,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "horry county, sc, usa": [
@@ -14932,7 +14867,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -14941,57 +14876,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Horry County",
-          "cases": 21,
-          "deaths": 1,
-          "recovered": 0,
-          "active": 20,
+          "cases": 31,
+          "deaths": 3,
           "ssl": true,
-          "rating": 0.5686274509803921
-        }
-      ],
-      "greenwood county, sc, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "SC",
-          "cases": 3,
-          "deaths": 0,
-          "county": "Greenwood County",
-          "ssl": true,
-          "rating": 0.6274509803921569
-        },
-        {
-          "state": "SC",
-          "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
-          "type": "json",
-          "aggregate": "county",
-          "scraper": {},
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "priority": 0,
-          "county": "Greenwood County",
-          "cases": 2,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 2,
-          "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "greenville county, sc, usa": [
@@ -15022,7 +14910,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15031,12 +14919,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Greenville County",
-          "cases": 51,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 51,
+          "cases": 71,
+          "deaths": 1,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "georgetown county, sc, usa": [
@@ -15067,7 +14953,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15076,12 +14962,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Georgetown County",
-          "cases": 3,
+          "cases": 10,
           "deaths": 0,
-          "recovered": 0,
-          "active": 3,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "florence county, sc, usa": [
@@ -15112,7 +14996,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15121,15 +15005,13 @@
           "certValidation": true,
           "priority": 0,
           "county": "Florence County",
-          "cases": 5,
-          "deaths": 2,
-          "recovered": 0,
-          "active": 3,
+          "cases": 14,
+          "deaths": 3,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
-      "dorchester county, sc, usa": [
+      "edgefield county, sc, usa": [
         {
           "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
           "type": "csv",
@@ -15148,75 +15030,71 @@
           "headless": false,
           "certValidation": true,
           "state": "SC",
-          "cases": 10,
-          "deaths": 0,
-          "county": "Dorchester County",
-          "ssl": true,
-          "rating": 0.6274509803921569
-        },
-        {
-          "state": "SC",
-          "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
-          "type": "json",
-          "aggregate": "county",
-          "scraper": {},
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "priority": 0,
-          "county": "Dorchester County",
-          "cases": 4,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 4,
-          "ssl": true,
-          "rating": 0.5686274509803921
-        }
-      ],
-      "colleton county, sc, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "SC",
-          "cases": 4,
-          "deaths": 0,
-          "county": "Colleton County",
-          "ssl": true,
-          "rating": 0.6274509803921569
-        },
-        {
-          "state": "SC",
-          "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
-          "type": "json",
-          "aggregate": "county",
-          "scraper": {},
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "priority": 0,
-          "county": "Colleton County",
           "cases": 1,
           "deaths": 0,
-          "recovered": 0,
-          "active": 1,
+          "county": "Edgefield County",
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "SC",
+          "country": "USA",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
+          "type": "json",
+          "aggregate": "county",
+          "scraper": {},
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Edgefield County",
+          "cases": 2,
+          "deaths": 0,
+          "ssl": true,
+          "rating": 0.49019607843137253
+        }
+      ],
+      "darlington county, sc, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "SC",
+          "cases": 8,
+          "deaths": 0,
+          "county": "Darlington County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "SC",
+          "country": "USA",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
+          "type": "json",
+          "aggregate": "county",
+          "scraper": {},
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Darlington County",
+          "cases": 10,
+          "deaths": 0,
+          "ssl": true,
+          "rating": 0.49019607843137253
         }
       ],
       "clarendon county, sc, usa": [
@@ -15247,7 +15125,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15256,102 +15134,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Clarendon County",
-          "cases": 5,
+          "cases": 16,
           "deaths": 1,
-          "recovered": 0,
-          "active": 4,
           "ssl": true,
-          "rating": 0.5686274509803921
-        }
-      ],
-      "chesterfield county, sc, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "SC",
-          "cases": 4,
-          "deaths": 0,
-          "county": "Chesterfield County",
-          "ssl": true,
-          "rating": 0.6274509803921569
-        },
-        {
-          "state": "SC",
-          "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
-          "type": "json",
-          "aggregate": "county",
-          "scraper": {},
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "priority": 0,
-          "county": "Chesterfield County",
-          "cases": 3,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 3,
-          "ssl": true,
-          "rating": 0.5686274509803921
-        }
-      ],
-      "chester county, sc, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "SC",
-          "cases": 2,
-          "deaths": 0,
-          "county": "Chester County",
-          "ssl": true,
-          "rating": 0.6274509803921569
-        },
-        {
-          "state": "SC",
-          "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
-          "type": "json",
-          "aggregate": "county",
-          "scraper": {},
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "priority": 0,
-          "county": "Chester County",
-          "cases": 1,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 1,
-          "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "charleston county, sc, usa": [
@@ -15382,7 +15168,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15391,12 +15177,53 @@
           "certValidation": true,
           "priority": 0,
           "county": "Charleston County",
-          "cases": 60,
+          "cases": 117,
           "deaths": 1,
-          "recovered": 0,
-          "active": 59,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
+        }
+      ],
+      "calhoun county, sc, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "SC",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Calhoun County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "SC",
+          "country": "USA",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
+          "type": "json",
+          "aggregate": "county",
+          "scraper": {},
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Calhoun County",
+          "cases": 2,
+          "deaths": 0,
+          "ssl": true,
+          "rating": 0.49019607843137253
         }
       ],
       "berkeley county, sc, usa": [
@@ -15427,7 +15254,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15436,12 +15263,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Berkeley County",
-          "cases": 8,
+          "cases": 14,
           "deaths": 0,
-          "recovered": 0,
-          "active": 8,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "beaufort county, sc, usa": [
@@ -15472,7 +15297,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15481,12 +15306,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Beaufort County",
-          "cases": 29,
+          "cases": 50,
           "deaths": 0,
-          "recovered": 0,
-          "active": 29,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "anderson county, sc, usa": [
@@ -15517,7 +15340,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15526,12 +15349,10 @@
           "certValidation": true,
           "priority": 0,
           "county": "Anderson County",
-          "cases": 21,
+          "cases": 29,
           "deaths": 0,
-          "recovered": 0,
-          "active": 21,
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.49019607843137253
         }
       ],
       "aiken county, sc, usa": [
@@ -15562,7 +15383,7 @@
         {
           "state": "SC",
           "country": "USA",
-          "url": "https://opendata.arcgis.com/datasets/5ffb6e698ea64a91a497194814a26311_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
           "type": "json",
           "aggregate": "county",
           "scraper": {},
@@ -15571,12 +15392,293 @@
           "certValidation": true,
           "priority": 0,
           "county": "Aiken County",
+          "cases": 9,
+          "deaths": 0,
+          "ssl": true,
+          "rating": 0.49019607843137253
+        }
+      ],
+      "abbeville county, sc, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "SC",
           "cases": 4,
           "deaths": 0,
-          "recovered": 0,
-          "active": 4,
+          "county": "Abbeville County",
           "ssl": true,
-          "rating": 0.5686274509803921
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "SC",
+          "country": "USA",
+          "url": "https://opendata.arcgis.com/datasets/6847b70e6f0343138aa54d9cb6038028_0.csv",
+          "type": "json",
+          "aggregate": "county",
+          "scraper": {},
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Abbeville County",
+          "cases": 3,
+          "deaths": 0,
+          "ssl": true,
+          "rating": 0.49019607843137253
+        }
+      ],
+      "washington county, ri, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "RI",
+          "cases": 9,
+          "deaths": 0,
+          "county": "Washington County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "RI",
+          "country": "USA",
+          "priority": 1,
+          "type": "csv",
+          "sources": [
+            {
+              "url": "https://health.ri.gov/data/covid-19/",
+              "name": "State of Rhode Island Department of Health"
+            }
+          ],
+          "url": "https://health.ri.gov/data/covid-19/",
+          "scraper": {},
+          "timeseries": false,
+          "headless": true,
+          "certValidation": true,
+          "county": "Washington County",
+          "cases": 33,
+          "aggregate": "city",
+          "ssl": true,
+          "rating": 0.37254901960784315
+        }
+      ],
+      "providence county, ri, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "RI",
+          "cases": 42,
+          "deaths": 0,
+          "county": "Providence County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "RI",
+          "country": "USA",
+          "priority": 1,
+          "type": "csv",
+          "sources": [
+            {
+              "url": "https://health.ri.gov/data/covid-19/",
+              "name": "State of Rhode Island Department of Health"
+            }
+          ],
+          "url": "https://health.ri.gov/data/covid-19/",
+          "scraper": {},
+          "timeseries": false,
+          "headless": true,
+          "certValidation": true,
+          "county": "Providence County",
+          "cases": 172,
+          "aggregate": "city",
+          "ssl": true,
+          "rating": 0.37254901960784315
+        }
+      ],
+      "newport county, ri, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "RI",
+          "cases": 8,
+          "deaths": 0,
+          "county": "Newport County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "RI",
+          "country": "USA",
+          "priority": 1,
+          "type": "csv",
+          "sources": [
+            {
+              "url": "https://health.ri.gov/data/covid-19/",
+              "name": "State of Rhode Island Department of Health"
+            }
+          ],
+          "url": "https://health.ri.gov/data/covid-19/",
+          "scraper": {},
+          "timeseries": false,
+          "headless": true,
+          "certValidation": true,
+          "county": "Newport County",
+          "cases": 26,
+          "aggregate": "city",
+          "ssl": true,
+          "rating": 0.37254901960784315
+        }
+      ],
+      "kent county, ri, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "RI",
+          "cases": 7,
+          "deaths": 0,
+          "county": "Kent County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "RI",
+          "country": "USA",
+          "priority": 1,
+          "type": "csv",
+          "sources": [
+            {
+              "url": "https://health.ri.gov/data/covid-19/",
+              "name": "State of Rhode Island Department of Health"
+            }
+          ],
+          "url": "https://health.ri.gov/data/covid-19/",
+          "scraper": {},
+          "timeseries": false,
+          "headless": true,
+          "certValidation": true,
+          "county": "Kent County",
+          "cases": 31,
+          "aggregate": "city",
+          "ssl": true,
+          "rating": 0.37254901960784315
+        }
+      ],
+      "bristol county, ri, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "RI",
+          "cases": 5,
+          "deaths": 0,
+          "county": "Bristol County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "RI",
+          "country": "USA",
+          "priority": 1,
+          "type": "csv",
+          "sources": [
+            {
+              "url": "https://health.ri.gov/data/covid-19/",
+              "name": "State of Rhode Island Department of Health"
+            }
+          ],
+          "url": "https://health.ri.gov/data/covid-19/",
+          "scraper": {},
+          "timeseries": false,
+          "headless": true,
+          "certValidation": true,
+          "county": "Bristol County",
+          "cases": 14,
+          "aggregate": "city",
+          "ssl": true,
+          "rating": 0.37254901960784315
         }
       ],
       "york county, pa, usa": [
@@ -20996,6 +21098,870 @@
           "rating": 0.49019607843137253
         }
       ],
+      "ward county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 7,
+          "deaths": 0,
+          "county": "Ward County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Ward County",
+          "cases": 7,
+          "tested": 447,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "walsh county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Walsh County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Walsh County",
+          "cases": 1,
+          "tested": 65,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "stark county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 9,
+          "deaths": 0,
+          "county": "Stark County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Stark County",
+          "cases": 10,
+          "tested": 178,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "sioux county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Sioux County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Sioux County",
+          "cases": 1,
+          "tested": 15,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "ramsey county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 3,
+          "deaths": 0,
+          "county": "Ramsey County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Ramsey County",
+          "cases": 3,
+          "tested": 53,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "pierce county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 2,
+          "deaths": 0,
+          "county": "Pierce County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Pierce County",
+          "cases": 2,
+          "tested": 25,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "mountrail county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 2,
+          "deaths": 0,
+          "county": "Mountrail County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Mountrail County",
+          "cases": 2,
+          "tested": 33,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "morton county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 13,
+          "deaths": 0,
+          "county": "Morton County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Morton County",
+          "cases": 14,
+          "tested": 221,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "mercer county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Mercer County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Mercer County",
+          "cases": 1,
+          "tested": 35,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "mclean county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 2,
+          "deaths": 0,
+          "county": "McLean County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "McLean County",
+          "cases": 2,
+          "tested": 40,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "mcintosh county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 1,
+          "deaths": 0,
+          "county": "McIntosh County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "McIntosh County",
+          "cases": 1,
+          "tested": 25,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "mchenry county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 1,
+          "deaths": 0,
+          "county": "McHenry County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "McHenry County",
+          "cases": 1,
+          "tested": 22,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "foster county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Foster County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Foster County",
+          "cases": 1,
+          "tested": 11,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "dunn county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Dunn County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Dunn County",
+          "cases": 1,
+          "tested": 8,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "divide county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Divide County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Divide County",
+          "cases": 1,
+          "tested": 3,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "cass county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 18,
+          "deaths": 1,
+          "county": "Cass County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Cass County",
+          "cases": 20,
+          "tested": 576,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "burleigh county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 28,
+          "deaths": 0,
+          "county": "Burleigh County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Burleigh County",
+          "cases": 28,
+          "tested": 637,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
+      "barnes county, nd, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "ND",
+          "cases": 2,
+          "deaths": 0,
+          "county": "Barnes County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "ND",
+          "country": "USA",
+          "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases",
+          "type": "table",
+          "aggregate": "county",
+          "sources": [
+            {
+              "name": "North Dakota Department of Health",
+              "url": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "county": "Barnes County",
+          "cases": 2,
+          "tested": 22,
+          "ssl": true,
+          "rating": 0.47058823529411764
+        }
+      ],
       "wilson county, nc, usa": [
         {
           "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
@@ -23758,7 +24724,7 @@
             "properties": {
               "state": "NY",
               "country": "USA",
-              "id": 2544
+              "id": 2597
             },
             "geometry": {
               "type": "MultiPolygon",
@@ -33138,6 +34104,57 @@
           "rating": 0.47058823529411764
         }
       ],
+      "worcester county, md, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "MD",
+          "cases": 2,
+          "deaths": 0,
+          "county": "Worcester County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "MD",
+          "country": "USA",
+          "aggregate": "county",
+          "sources": [
+            {
+              "url": "https://health.maryland.gov/",
+              "name": "Maryland Department of Health"
+            }
+          ],
+          "scraper": {},
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "type": "csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
+          "county": "Worcester County",
+          "cases": 3,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 3,
+          "ssl": true,
+          "rating": 0.5686274509803921
+        }
+      ],
       "wicomico county, md, usa": [
         {
           "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
@@ -33179,12 +34196,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Wicomico County",
-          "cases": 4,
+          "cases": 6,
           "deaths": 0,
           "recovered": 0,
-          "active": 4,
+          "active": 6,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33230,12 +34247,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Washington County",
-          "cases": 2,
+          "cases": 7,
           "deaths": 0,
           "recovered": 0,
-          "active": 2,
+          "active": 7,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33281,12 +34298,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Talbot County",
-          "cases": 1,
+          "cases": 4,
           "deaths": 0,
           "recovered": 0,
-          "active": 1,
+          "active": 4,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33332,12 +34349,63 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "St. Mary's County",
-          "cases": 2,
+          "cases": 9,
           "deaths": 0,
           "recovered": 0,
-          "active": 2,
+          "active": 9,
+          "ssl": true,
+          "rating": 0.5686274509803921
+        }
+      ],
+      "queen anne's county, md, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "MD",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Queen Anne's County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "MD",
+          "country": "USA",
+          "aggregate": "county",
+          "sources": [
+            {
+              "url": "https://health.maryland.gov/",
+              "name": "Maryland Department of Health"
+            }
+          ],
+          "scraper": {},
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "type": "csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
+          "county": "Queen Anne's County",
+          "cases": 4,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 4,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33383,12 +34451,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Prince George's County",
-          "cases": 63,
+          "cases": 294,
           "deaths": 0,
           "recovered": 0,
-          "active": 63,
+          "active": 294,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33434,12 +34502,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Montgomery County",
-          "cases": 107,
+          "cases": 341,
           "deaths": 0,
           "recovered": 0,
-          "active": 107,
+          "active": 341,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33485,12 +34553,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Kent County",
-          "cases": 0,
+          "cases": 3,
           "deaths": 0,
           "recovered": 0,
-          "active": 0,
+          "active": 3,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33536,12 +34604,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Howard County",
-          "cases": 30,
+          "cases": 96,
           "deaths": 0,
           "recovered": 0,
-          "active": 30,
+          "active": 96,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33587,12 +34655,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Harford County",
-          "cases": 5,
+          "cases": 24,
           "deaths": 0,
           "recovered": 0,
-          "active": 5,
+          "active": 24,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33638,12 +34706,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Frederick County",
-          "cases": 4,
+          "cases": 26,
           "deaths": 0,
           "recovered": 0,
-          "active": 4,
+          "active": 26,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33689,63 +34757,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Charles County",
-          "cases": 5,
+          "cases": 33,
           "deaths": 0,
           "recovered": 0,
-          "active": 5,
-          "ssl": true,
-          "rating": 0.5686274509803921
-        }
-      ],
-      "cecil county, md, usa": [
-        {
-          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
-          "type": "csv",
-          "country": "USA",
-          "timeseries": true,
-          "aggregate": "county",
-          "priority": -1,
-          "curators": [
-            {
-              "name": "The New York Times",
-              "url": "http://nytimes.com/",
-              "twitter": "@nytimes",
-              "github": "nytimes"
-            }
-          ],
-          "headless": false,
-          "certValidation": true,
-          "state": "MD",
-          "cases": 13,
-          "deaths": 0,
-          "county": "Cecil County",
-          "ssl": true,
-          "rating": 0.6274509803921569
-        },
-        {
-          "state": "MD",
-          "country": "USA",
-          "aggregate": "county",
-          "sources": [
-            {
-              "url": "https://health.maryland.gov/",
-              "name": "Maryland Department of Health"
-            }
-          ],
-          "scraper": {},
-          "timeseries": false,
-          "headless": false,
-          "certValidation": true,
-          "priority": 0,
-          "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
-          "county": "Cecil County",
-          "cases": 3,
-          "deaths": 0,
-          "recovered": 0,
-          "active": 3,
+          "active": 33,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33791,12 +34808,63 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Carroll County",
-          "cases": 5,
+          "cases": 82,
           "deaths": 0,
           "recovered": 0,
-          "active": 5,
+          "active": 82,
+          "ssl": true,
+          "rating": 0.5686274509803921
+        }
+      ],
+      "caroline county, md, usa": [
+        {
+          "url": "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
+          "type": "csv",
+          "country": "USA",
+          "timeseries": true,
+          "aggregate": "county",
+          "priority": -1,
+          "curators": [
+            {
+              "name": "The New York Times",
+              "url": "http://nytimes.com/",
+              "twitter": "@nytimes",
+              "github": "nytimes"
+            }
+          ],
+          "headless": false,
+          "certValidation": true,
+          "state": "MD",
+          "cases": 1,
+          "deaths": 0,
+          "county": "Caroline County",
+          "ssl": true,
+          "rating": 0.6274509803921569
+        },
+        {
+          "state": "MD",
+          "country": "USA",
+          "aggregate": "county",
+          "sources": [
+            {
+              "url": "https://health.maryland.gov/",
+              "name": "Maryland Department of Health"
+            }
+          ],
+          "scraper": {},
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "type": "csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
+          "county": "Caroline County",
+          "cases": 4,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 4,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33842,12 +34910,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Calvert County",
-          "cases": 3,
+          "cases": 12,
           "deaths": 0,
           "recovered": 0,
-          "active": 3,
+          "active": 12,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33893,12 +34961,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Baltimore City",
-          "cases": 41,
+          "cases": 152,
           "deaths": 0,
           "recovered": 0,
-          "active": 41,
+          "active": 152,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33944,12 +35012,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Baltimore County",
-          "cases": 42,
+          "cases": 186,
           "deaths": 0,
           "recovered": 0,
-          "active": 42,
+          "active": 186,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -33995,12 +35063,12 @@
           "certValidation": true,
           "priority": 0,
           "type": "csv",
-          "url": "https://opendata.arcgis.com/datasets/3d9ca88970dd4689a701354d7fa6830b_0.csv",
+          "url": "https://opendata.arcgis.com/datasets/fd5f93bf49cf4b35b330d6f500c1e8e6_0.csv",
           "county": "Anne Arundel County",
-          "cases": 24,
+          "cases": 110,
           "deaths": 0,
           "recovered": 0,
-          "active": 24,
+          "active": 110,
           "ssl": true,
           "rating": 0.5686274509803921
         }
@@ -48095,17 +49163,20 @@
               "description": "Delaware Health and Social Services Division of Public Health"
             }
           ],
+          "scraper": {},
           "timeseries": false,
           "headless": false,
           "certValidation": true,
           "priority": 0,
-          "url": "http://opendata.arcgis.com/datasets/c8d4efa2a6bd48a1a7ae074a8166c6fa_0.csv",
-          "type": "csv",
+          "url": "https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_Time_VIEW/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&resultOffset=0&resultRecordCount=50&cacheHint=true",
+          "type": "json",
           "county": "Sussex County",
-          "cases": 26,
+          "cases": 81,
+          "deaths": 1,
           "recovered": 0,
-          "ssl": false,
-          "rating": 0.47058823529411764
+          "active": 80,
+          "ssl": true,
+          "rating": 0.5686274509803921
         }
       ],
       "new castle county, de, usa": [
@@ -48144,17 +49215,20 @@
               "description": "Delaware Health and Social Services Division of Public Health"
             }
           ],
+          "scraper": {},
           "timeseries": false,
           "headless": false,
           "certValidation": true,
           "priority": 0,
-          "url": "http://opendata.arcgis.com/datasets/c8d4efa2a6bd48a1a7ae074a8166c6fa_0.csv",
-          "type": "csv",
+          "url": "https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_Time_VIEW/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&resultOffset=0&resultRecordCount=50&cacheHint=true",
+          "type": "json",
           "county": "New Castle County",
-          "cases": 79,
+          "cases": 156,
+          "deaths": 3,
           "recovered": 0,
-          "ssl": false,
-          "rating": 0.47058823529411764
+          "active": 153,
+          "ssl": true,
+          "rating": 0.5686274509803921
         }
       ],
       "kent county, de, usa": [
@@ -48193,17 +49267,20 @@
               "description": "Delaware Health and Social Services Division of Public Health"
             }
           ],
+          "scraper": {},
           "timeseries": false,
           "headless": false,
           "certValidation": true,
           "priority": 0,
-          "url": "http://opendata.arcgis.com/datasets/c8d4efa2a6bd48a1a7ae074a8166c6fa_0.csv",
-          "type": "csv",
+          "url": "https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_Time_VIEW/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&resultOffset=0&resultRecordCount=50&cacheHint=true",
+          "type": "json",
           "county": "Kent County",
-          "cases": 14,
+          "cases": 27,
+          "deaths": 2,
           "recovered": 0,
-          "ssl": false,
-          "rating": 0.47058823529411764
+          "active": 25,
+          "ssl": true,
+          "rating": 0.5686274509803921
         }
       ],
       "weld county, co, usa": [
@@ -53695,6 +54772,51 @@
           "rating": 0.49019607843137253
         }
       ],
+      "nova scotia, can": [
+        {
+          "country": "CAN",
+          "type": "csv",
+          "sources": [
+            {
+              "description": "Health Promotion and Chronic Disease Prevention Branch",
+              "name": "Public Health Agency of Canada",
+              "url": "https://health-infobase.canada.ca/"
+            }
+          ],
+          "aggregate": "state",
+          "scraper": {},
+          "timeseries": false,
+          "headless": false,
+          "certValidation": true,
+          "priority": 0,
+          "url": "https://health-infobase.canada.ca/src/data/summary_current.csv",
+          "state": "Nova Scotia",
+          "cases": 90,
+          "deaths": 0,
+          "ssl": true,
+          "rating": 0.4117647058823529
+        },
+        {
+          "state": "Nova Scotia",
+          "country": "CAN",
+          "url": "https://novascotia.ca/coronavirus/COVID-19-cases.csv",
+          "type": "csv",
+          "certValidation": false,
+          "sources": [
+            {
+              "name": "Government of Nova Scotia",
+              "url": "https://novascotia.ca/coronavirus/#cases"
+            }
+          ],
+          "timeseries": false,
+          "headless": false,
+          "priority": 0,
+          "cases": 122,
+          "tested": 4853,
+          "ssl": false,
+          "rating": 0.27450980392156865
+        }
+      ],
       "western australia, aus": [
         {
           "aggregate": "state",
@@ -54114,8 +55236,8 @@
           "priority": 2,
           "sources": [
             {
-              "description": "Nothern Territory Government Coronavirus site",
-              "name": "Nothern Territory Government Coronavirus site",
+              "description": "Northern Territory Government Coronavirus site",
+              "name": "Northern Territory Government Coronavirus site",
               "url": "https://coronavirus.nt.gov.au"
             }
           ],
@@ -54130,7 +55252,7 @@
           "rating": 0.19607843137254902
         }
       ],
-      "australian capital territory, aus": [
+      "new south wales, aus": [
         {
           "aggregate": "state",
           "country": "AUS",
@@ -54147,42 +55269,32 @@
           "timeseries": false,
           "headless": false,
           "certValidation": true,
-          "state": "Australian Capital Territory",
-          "cases": 77,
+          "state": "New South Wales",
+          "cases": 1918,
           "ssl": true,
           "rating": 0.3137254901960784
         },
         {
           "country": "AUS",
-          "maintainers": [
-            {
-              "name": "Cameron Chamberlain",
-              "email": "corona@camjc.com",
-              "github": "camjc",
-              "country": "AUS",
-              "state": "Victoria",
-              "city": "Melbourne",
-              "flag": "🇦🇺"
-            }
-          ],
           "priority": 2,
           "sources": [
             {
-              "description": "ACT Government Health Department",
-              "name": "ACT Government Health",
-              "url": "https://www.health.act.gov.au"
+              "description": "NSW Government Health Department",
+              "name": "NSW Government Health",
+              "url": "https://www.health.nsw.gov.au"
             }
           ],
-          "state": "Australian Capital Territory",
+          "state": "New South Wales",
           "type": "table",
-          "url": "https://www.health.act.gov.au/about-our-health-system/novel-coronavirus-covid-19",
+          "url": "https://www.health.nsw.gov.au/_layouts/feed.aspx?xsl=1&web=/news&page=4ac47e14-04a9-4016-b501-65a23280e841&wp=baabf81e-a904-44f1-8d59-5f6d56519965&pageurl=/news/Pages/rss-nsw-health.aspx",
           "timeseries": false,
           "headless": false,
           "certValidation": true,
-          "deaths": 0,
-          "recovered": 0,
+          "cases": 1918,
+          "discard": 94534,
+          "tested": 96446,
           "ssl": true,
-          "rating": 0.3137254901960784
+          "rating": 0.27450980392156865
         },
         {
           "maintainers": [
@@ -54212,13 +55324,13 @@
           "certValidation": true,
           "aggregate": "state",
           "country": "AUS",
-          "cases": 71,
-          "deaths": 0,
+          "cases": 1617,
+          "deaths": 8,
           "coordinates": [
-            149.0124,
-            -35.4735
+            151.2093,
+            -33.8688
           ],
-          "state": "Australian Capital Territory",
+          "state": "New South Wales",
           "type": "list",
           "ssl": true,
           "rating": 0.5098039215686274
@@ -56110,7 +57222,7 @@
               "code": "02",
               "name": "Martinique",
               "population": 376480,
-              "id": 252
+              "id": 266
             }
           },
           "population": 376480,
@@ -57456,7 +58568,7 @@
               "code": "06",
               "name": "Mayotte",
               "population": 270372,
-              "id": 255
+              "id": 269
             }
           },
           "population": 270372,
@@ -58662,7 +59774,7 @@
               "code": "01",
               "name": "Guadeloupe",
               "population": 390253,
-              "id": 251
+              "id": 265
             }
           },
           "population": 390253,
@@ -58733,7 +59845,7 @@
           "rating": 0.3137254901960784
         }
       ],
-      "new south wales, aus": [
+      "australian capital territory, aus": [
         {
           "maintainers": [
             {
@@ -58762,13 +59874,13 @@
           "certValidation": true,
           "aggregate": "state",
           "country": "AUS",
-          "cases": 1617,
-          "deaths": 8,
+          "cases": 71,
+          "deaths": 0,
           "coordinates": [
-            151.2093,
-            -33.8688
+            149.0124,
+            -35.4735
           ],
-          "state": "New South Wales",
+          "state": "Australian Capital Territory",
           "type": "list",
           "ssl": true,
           "rating": 0.5098039215686274
@@ -58789,8 +59901,8 @@
           "timeseries": false,
           "headless": false,
           "certValidation": true,
-          "state": "New South Wales",
-          "cases": 1918,
+          "state": "Australian Capital Territory",
+          "cases": 77,
           "ssl": true,
           "rating": 0.3137254901960784
         }
@@ -58804,28 +59916,16 @@
         "err": "TypeError: Cannot read property 'text' of null"
       },
       {
-        "name": "CAN",
-        "url": "https://health-infobase.canada.ca/src/data/summary_current.csv",
-        "type": "Error",
-        "err": "Error: Timeseries does not contain a sample for SCRAPE_DATE 30-03-2020"
-      },
-      {
         "name": "CHE",
         "url": "https://github.com/daenuprobst/covid19-cases-switzerland/",
         "type": "TypeError",
         "err": "TypeError: Cannot read property 'AG' of undefined"
       },
       {
-        "name": "New South Wales, AUS",
-        "url": "https://www.health.nsw.gov.au/_layouts/feed.aspx?xsl=1&web=/news&page=4ac47e14-04a9-4016-b501-65a23280e841&wp=baabf81e-a904-44f1-8d59-5f6d56519965&pageurl=/news/Pages/rss-nsw-health.aspx",
-        "type": "DeprecatedError",
-        "err": "DeprecatedError: NSW page seems to be broken"
-      },
-      {
-        "name": "Scotland, GBR",
-        "url": "https://www.gov.scot/coronavirus-covid-19/",
+        "name": "Australian Capital Territory, AUS",
+        "url": "https://www.covid19.act.gov.au/updates/confirmed-case-information",
         "type": "Error",
-        "err": "Error: Invalid data: cases is not a number"
+        "err": "Error: There is a row we are not expecting:  lives lost"
       },
       {
         "name": "Kern County, CA, USA",
@@ -58918,21 +60018,15 @@
         "err": "Error: No data for 2020-03-30"
       },
       {
-        "name": "RI, USA",
-        "url": "https://docs.google.com/spreadsheets/d/1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q/gviz/tq?tqx=out:csv&sheet=County+Data#gid=0",
-        "type": "Error",
-        "err": "Error: RI stopped reporting by county"
-      },
-      {
         "name": "WA, USA",
         "url": "https://www.doh.wa.gov/Emergencies/Coronavirus",
-        "type": "TypeError",
-        "err": "TypeError: Cannot read property 'parent' of null"
+        "type": "Error",
+        "err": "Error: Attempted to addEmptyRegions with without providing any county records"
       }
     ]
   },
   "findFeatures": {
-    "numFeaturesFound": 3657,
+    "numFeaturesFound": 3754,
     "missingFeatures": [
       "French Polynesia, FRA",
       "New Caledonia, FRA",
@@ -58940,7 +60034,6 @@
       "Aruba, NLD",
       "Channel Islands, GBR",
       "Turks and Caicos Islands, GBR",
-      "MS Zaandam",
       "Zurich, CHE",
       "Ladakh, IND",
       "Telengana, IND",
@@ -58964,12 +60057,21 @@
       "St. Helens, England, GBR",
       "Wirral, England, GBR",
       "Hackney and City of London, England, GBR",
+      "Ayrshire and Arran, Scotland, GBR",
+      "Borders, Scotland, GBR",
+      "Forth Valley, Scotland, GBR",
+      "Grampian, Scotland, GBR",
+      "Greater Glasgow and Clyde, Scotland, GBR",
+      "Lanarkshire, Scotland, GBR",
+      "Lothian, Scotland, GBR",
+      "Tayside, Scotland, GBR",
+      "Scotland, GBR",
       "Baltimore City, MD, USA",
       "Joplin County, MO, USA"
     ]
   },
   "findPopulation": {
-    "numLocationsWithPopulation": 3325,
+    "numLocationsWithPopulation": 3374,
     "missingPopulations": [
       "Greenland, DNK",
       "French Guiana, FRA",
@@ -58988,8 +60090,8 @@
       "Anguilla, GBR",
       "British Virgin Islands, GBR",
       "Turks and Caicos Islands, GBR",
-      "MS Zaandam",
       "Zurich, CHE",
+      "Республика Чувашия, RUS",
       "Anchorage, AK, USA",
       "(unassigned), CA, USA",
       "(unassigned), CO, USA",
@@ -59152,6 +60254,19 @@
       "Waltham Forest, England, GBR",
       "Wandsworth, England, GBR",
       "Westminster, England, GBR",
+      "Ayrshire and Arran, Scotland, GBR",
+      "Borders, Scotland, GBR",
+      "Dumfries and Galloway, Scotland, GBR",
+      "Fife, Scotland, GBR",
+      "Forth Valley, Scotland, GBR",
+      "Grampian, Scotland, GBR",
+      "Greater Glasgow and Clyde, Scotland, GBR",
+      "Highland, Scotland, GBR",
+      "Lanarkshire, Scotland, GBR",
+      "Lothian, Scotland, GBR",
+      "Shetland, Scotland, GBR",
+      "Tayside, Scotland, GBR",
+      "Scotland, GBR",
       "(unassigned), AR, USA",
       "(unassigned), FL, USA",
       "(unassigned), GA, USA",
@@ -59161,13 +60276,50 @@
       "(unassigned), MI, USA",
       "Joplin County, MO, USA",
       "(unassigned), MO, USA",
+      "Barrington, Bristol County, RI, USA",
+      "Bristol, Bristol County, RI, USA",
+      "Burrillville, Providence County, RI, USA",
+      "Central Falls, Providence County, RI, USA",
+      "Charlestown, Washington County, RI, USA",
+      "Coventry, Kent County, RI, USA",
+      "Cranston, Providence County, RI, USA",
+      "Cumberland, Providence County, RI, USA",
+      "East Greenwich, Kent County, RI, USA",
+      "East Providence, Providence County, RI, USA",
+      "Exeter, Washington County, RI, USA",
+      "Foster, Providence County, RI, USA",
+      "Glocester, Providence County, RI, USA",
+      "Hopkinton, Washington County, RI, USA",
+      "Jamestown, Newport County, RI, USA",
+      "Johnston, Providence County, RI, USA",
+      "Lincoln, Providence County, RI, USA",
+      "Little Compton, Newport County, RI, USA",
+      "Middletown, Newport County, RI, USA",
+      "Narragansett, Washington County, RI, USA",
+      "New Shoreham, Washington County, RI, USA",
+      "Newport, Newport County, RI, USA",
+      "North Kingstown, Washington County, RI, USA",
+      "North Providence, Providence County, RI, USA",
+      "North Smithfield, Providence County, RI, USA",
+      "Pawtucket, Providence County, RI, USA",
+      "Portsmouth, Newport County, RI, USA",
+      "Providence, Providence County, RI, USA",
+      "Richmond, Washington County, RI, USA",
+      "Scituate, Providence County, RI, USA",
+      "Smithfield, Providence County, RI, USA",
+      "South Kingstown, Washington County, RI, USA",
+      "Tiverton, Newport County, RI, USA",
+      "Warren, Bristol County, RI, USA",
+      "Warwick, Kent County, RI, USA",
+      "West Greenwich, Kent County, RI, USA",
+      "West Warwick, Kent County, RI, USA",
+      "Westerly, Washington County, RI, USA",
+      "Woonsocket, Providence County, RI, USA",
       "(unassigned), TN, USA",
       "Bear River County, UT, USA"
     ]
   },
   "validate": {
-    "errors": [
-      "MS Zaandam .country should NOT be longer than 3 characters"
-    ]
+    "errors": []
   }
 }
