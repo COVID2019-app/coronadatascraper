@@ -9,7 +9,7 @@ const postcssImport = require('postcss-import');
 
 const prod = !process.env.ROLLUP_WATCH;
 
-export default [
+module.exports = [
   {
     input: 'site/index.js',
     output: {
