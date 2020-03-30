@@ -1,16 +1,5 @@
 [
   {
-    "country": "ITA",
-    "url": "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv",
-    "aggregate": "state",
-    "priority": 1,
-    "headless": false,
-    "certValidation": true,
-    "type": "csv",
-    "ssl": true,
-    "rating": 0.7058823529411765
-  },
-  {
     "state": "AR",
     "country": "USA",
     "url": "https://services.arcgis.com/PwY9ZuZRDiI5nXUB/ArcGIS/rest/services/ADH_COVID19_Positive_Test_Results/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*",
@@ -388,6 +377,38 @@
     "rating": 0.5098039215686274
   },
   {
+    "country": "RUS",
+    "aggregate": "state",
+    "url": "https://yandex.ru/maps/api/covid?csrfToken=",
+    "type": "json",
+    "curators": [
+      {
+        "name": "Yandex",
+        "url": "https://yandex.ru"
+      }
+    ],
+    "sources": [
+      {
+        "description": "Data provided by Rospotrebnadzor (Federal Service for Surveillance on Consumer Rights Protection and Human Wellbeing)",
+        "name": "Rospotrebnadzor",
+        "url": "https://www.rospotrebnadzor.ru/"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "Arseniy Ivanov",
+        "twitter": "@freeatnet",
+        "github": "freeatnet",
+        "email": "arseniy+coronadatascraper@freeatnet.com"
+      }
+    ],
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "ssl": true,
+    "rating": 0.49019607843137253
+  },
+  {
     "country": "USA",
     "url": "https://covidtracking.com/api/states",
     "type": "json",
@@ -632,6 +653,24 @@
     "rating": 0.47058823529411764
   },
   {
+    "state": "UT",
+    "country": "USA",
+    "aggregate": "county",
+    "sources": [
+      {
+        "url": "https://health.utah.gov/",
+        "name": "Utah Department of Health"
+      }
+    ],
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "url": "https://coronavirus-dashboard.utah.gov/",
+    "type": "table",
+    "ssl": true,
+    "rating": 0.47058823529411764
+  },
+  {
     "state": "WI",
     "country": "USA",
     "aggregate": "county",
@@ -667,35 +706,6 @@
     "priority": 0,
     "ssl": true,
     "rating": 0.45098039215686275
-  },
-  {
-    "country": "AUS",
-    "maintainers": [
-      {
-        "name": "Cameron Chamberlain",
-        "email": "corona@camjc.com",
-        "github": "camjc",
-        "country": "AUS",
-        "state": "Victoria",
-        "city": "Melbourne",
-        "flag": "🇦🇺"
-      }
-    ],
-    "priority": 2,
-    "sources": [
-      {
-        "description": "ACT Government Health Department",
-        "name": "ACT Government Health",
-        "url": "https://www.health.act.gov.au"
-      }
-    ],
-    "state": "Australian Capital Territory",
-    "type": "table",
-    "url": "https://www.health.act.gov.au/about-our-health-system/novel-coronavirus-covid-19",
-    "headless": false,
-    "certValidation": true,
-    "ssl": true,
-    "rating": 0.43137254901960786
   },
   {
     "country": "AUS",
@@ -1271,42 +1281,6 @@
     "rating": 0.43137254901960786
   },
   {
-    "state": "WA",
-    "country": "USA",
-    "sources": [
-      {
-        "url": "https://www.doh.wa.gov/",
-        "name": "Washington State Department of Health"
-      }
-    ],
-    "url": "https://www.doh.wa.gov/Emergencies/Coronavirus",
-    "type": "table",
-    "headless": true,
-    "aggregate": "county",
-    "certValidation": true,
-    "priority": 0,
-    "ssl": true,
-    "rating": 0.43137254901960786
-  },
-  {
-    "country": "CAN",
-    "type": "csv",
-    "sources": [
-      {
-        "description": "Health Promotion and Chronic Disease Prevention Branch",
-        "name": "Public Health Agency of Canada",
-        "url": "https://health-infobase.canada.ca/"
-      }
-    ],
-    "aggregate": "state",
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "url": "https://health-infobase.canada.ca/src/data/summary_current.csv",
-    "ssl": true,
-    "rating": 0.4117647058823529
-  },
-  {
     "country": "GBR",
     "state": "England",
     "url": "https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data",
@@ -1394,14 +1368,13 @@
     "rating": 0.4117647058823529
   },
   {
-    "country": "GBR",
-    "state": "Scotland",
-    "url": "https://www.gov.scot/coronavirus-covid-19/",
-    "aggregate": "county",
-    "type": "table",
+    "country": "ITA",
+    "url": "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv",
+    "aggregate": "state",
+    "priority": 1,
     "headless": false,
     "certValidation": true,
-    "priority": 0,
+    "type": "csv",
     "ssl": true,
     "rating": 0.39215686274509803
   },
@@ -1868,6 +1841,35 @@
     "rating": 0.3137254901960784
   },
   {
+    "country": "AUS",
+    "maintainers": [
+      {
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "AUS",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
+      }
+    ],
+    "priority": 2,
+    "sources": [
+      {
+        "description": "ACT Government Health Department",
+        "name": "ACT Government Health",
+        "url": "https://www.health.act.gov.au"
+      }
+    ],
+    "state": "Australian Capital Territory",
+    "type": "table",
+    "url": "https://www.health.act.gov.au/about-our-health-system/novel-coronavirus-covid-19",
+    "headless": false,
+    "certValidation": true,
+    "ssl": true,
+    "rating": 0.3137254901960784
+  },
+  {
     "county": "Del Norte County",
     "state": "CA",
     "country": "USA",
@@ -1908,6 +1910,23 @@
     "type": "list",
     "ssl": false,
     "rating": 0.3137254901960784
+  },
+  {
+    "state": "Nova Scotia",
+    "country": "CAN",
+    "url": "https://novascotia.ca/coronavirus/COVID-19-cases.csv",
+    "type": "csv",
+    "certValidation": false,
+    "sources": [
+      {
+        "name": "Government of Nova Scotia",
+        "url": "https://novascotia.ca/coronavirus/#cases"
+      }
+    ],
+    "headless": false,
+    "priority": 0,
+    "ssl": false,
+    "rating": 0.27450980392156865
   },
   {
     "country": "AUS",
@@ -2208,32 +2227,6 @@
     "rating": 0.19607843137254902
   },
   {
-    "state": "MA",
-    "country": "USA",
-    "aggregate": "county",
-    "type": "pdf",
-    "sources": [
-      {
-        "url": "https://www.mass.gov/orgs/department-of-public-health",
-        "name": "Massachusetts DPH",
-        "description": "Massachusetts Department of Public Health"
-      }
-    ],
-    "maintainers": [
-      {
-        "name": "Quentin Golsteyn",
-        "github": "qgolsteyn",
-        "flag": "🇨🇦"
-      }
-    ],
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "url": "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-28-2020/download",
-    "ssl": true,
-    "rating": 0.17647058823529413
-  },
-  {
     "state": "NH",
     "country": "USA",
     "sources": [
@@ -2326,6 +2319,33 @@
     "priority": 0,
     "ssl": true,
     "rating": 0.13725490196078433
+  },
+  {
+    "county": "Alameda County",
+    "state": "CA",
+    "country": "USA",
+    "sources": [
+      {
+        "url": "http://www.acphd.org",
+        "name": "Alameda Count Public Health Department"
+      }
+    ],
+    "url": "http://www.acphd.org/2019-ncov.aspx",
+    "headless": true,
+    "type": "paragraph",
+    "maintainers": [
+      {
+        "name": "John Bencina",
+        "github": "jbencina",
+        "country": "USA",
+        "state": "CA",
+        "flag": "🇺🇸"
+      }
+    ],
+    "certValidation": true,
+    "priority": 0,
+    "ssl": false,
+    "rating": 0.0784313725490196
   },
   {
     "country": "AUS",
