@@ -1,11 +1,11 @@
-import json from '@rollup/plugin-json';
-import serve from 'rollup-plugin-serve';
-import livereload from 'rollup-plugin-livereload';
-import copy from 'rollup-plugin-copy-glob';
-import resolve from '@rollup/plugin-node-resolve';
-import postcss from 'rollup-plugin-postcss';
-import postcssNested from 'postcss-nested';
-import postcssImport from 'postcss-import';
+const json = require('@rollup/plugin-json');
+const serve = require('rollup-plugin-serve');
+const livereload = require('rollup-plugin-livereload');
+const copy = require('rollup-plugin-copy-glob');
+const resolve = require('@rollup/plugin-node-resolve');
+const postcss = require('rollup-plugin-postcss');
+const postcssNested = require('postcss-nested');
+const postcssImport = require('postcss-import');
 
 const prod = !process.env.ROLLUP_WATCH;
 
@@ -23,7 +23,7 @@ export default [
       !prod &&
         serve({
           contentBase: 'dist',
-          port: 3000
+          port: 8080
         }),
       !prod && livereload({ watch: 'site' }),
       copy([{ files: 'site/**/!(*.js|*.css|.DS_Store)', dest: 'dist' }], { verbose: true, watch: !prod }),
